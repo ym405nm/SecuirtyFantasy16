@@ -74,3 +74,6 @@ end
 gem 'devise'
 gem 'digest-sha3', git: 'https://github.com/makevoid/digest-sha3-ruby', ref: '887b1051dd8d642ad9b16ea2ba075e3463051d83'
 gem 'ethereum.rb'
+
+gem 'sidekiq'
+gem 'dotenv-rails'
