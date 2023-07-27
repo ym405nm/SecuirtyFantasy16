@@ -10,10 +10,16 @@
   <%= @user.eth_address %>
 </p>
 
-
 <p>
   <strong>ETH Balance:</strong>
   <%= @balance %>
 </p>
 
+<%= button_to 'Add Balance', add_balance_path, method: :post %>
+
 <%= link_to 'Log out', destroy_user_session_path, method: :get %>
+
+<!-- Display flash messages -->
+<% if flash[:notice] %>
+  <p class="notice"><%= flash[:notice] %></p>
+<% end %>
