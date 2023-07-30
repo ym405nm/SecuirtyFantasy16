@@ -36,3 +36,4 @@
 
 .idea
 .env
+app/data/abi.json
